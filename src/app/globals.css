@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+  font-family: var(--font-helvetica), sans-serif;
+  background-color: #E9E9E9;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.font-orbitron {
+  font-family: var(--font-orbitron), sans-serif;
+}
