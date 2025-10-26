@@ -56,7 +56,7 @@ export default function Text() {
           </p>
         </div>
 
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 z-5">
+        <div className="absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 z-5 overflow-hidden">
           <p id="kxsi" className="subtitle text-[500px] transform -rotate-8 font-bold" >
             KXSI
           </p>
