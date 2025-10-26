@@ -1,66 +1,34 @@
-import Link from "next/link";
+import {navLinks, navLinks2} from "../../../constants";
 
-export default function NavBar() {
-  return (
-    <nav className="px-20 py-5">
-      <div className="flex justify-between items-center">
-        <div className="flex items-center space-x-13">
-          <div className="flex">
-            <p className="font-bold text-[25px]">KXSI</p>
-            <span className="mt-2.5">studios</span>
-          </div>
-
-          <div className="flex space-x-7">
-            <Link
-              href=""
-              className="transform transition-transform duration-300 hover:scale-105"
-            >
-              Music
-            </Link>
-            <Link
-              href=""
-              className="transform transition-transform duration-300 hover:scale-105"
-            >
-              Tour
-            </Link>
-            <Link
-              href=""
-              className="transform transition-transform duration-300 hover:scale-105"
-            >
-              Photos
-            </Link>
-            <Link
-              href=""
-              className="transform transition-transform duration-300 hover:scale-105"
-            >
-              Shops
-            </Link>
-          </div>
-        </div>
-
-        <div className="flex space-x-7">
-          <Link
-            href=""
-            className="transform transition-transform duration-300 hover:scale-105"
-          >
-            Spotify
-          </Link>
-          <Link
-            href=""
-            className="transform transition-transform duration-300 hover:scale-105"
-          >
-            Instagram
-          </Link>
-          <Link
-            href=""
-            className="transform transition-transform duration-300 hover:scale-105"
-          >
-            Twitter
-          </Link>
-        </div>
+export default function Navbar() {
+    return (
+        <nav className="py-3 px-15">
+           <div className="flex items-center justify-between w-full">
+               <div className="flex items-center space-x-30">
+                   <a href="#home" className="flex ">
+                       <p className="font-extrabold text-[23px]">KXSI</p>
+                       <p className="font-light absolute top-5 left-32">studios</p>
+                   </a>
 
 
-      </div>
-    </nav>
-  );
+                   <ul className="flex space-x-9">
+                       {navLinks.map((link, index) => (
+                           <li key={link.id} className={`text-[18px]`}>
+                               <a href={`/${link.id}`}>{link.title}</a>
+                           </li>
+                       ))}
+                   </ul>
+               </div>
+
+                   <ul className="flex space-x-9">
+                       {navLinks2.map((link, index) => (
+                           <li key={link.id} className={`text-[18px]`}>
+                               <a href={`/${link.id}`}>{link.title}</a>
+                           </li>
+                       ))}
+                   </ul>
+
+           </div>
+        </nav>
+    );
 }
