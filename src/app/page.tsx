@@ -12,6 +12,7 @@ export default function Home() {
           <NavBar />
           <Image />
           <Text />
+          <div className="h-[5000px]"></div>
       </section>
     </main>
   );
