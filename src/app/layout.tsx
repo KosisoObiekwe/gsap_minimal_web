@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import AOSInit from "@/components/AOS/page";
 // import gsap from "gsap";
 // import { ScrollTrigger, SplitText } from "gsap/all";
 //
@@ -57,7 +56,6 @@ export default async function RootLayout({
         className={`${helvetica.className} ${orbitron.variable} antialiased`}
       >
         {children}
-        <AOSInit />
       </body>
     </html>
   );
