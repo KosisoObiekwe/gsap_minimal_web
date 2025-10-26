@@ -5,7 +5,8 @@ body {
   background-color: #00000010;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
+
 }
 
 .font-orbitron {

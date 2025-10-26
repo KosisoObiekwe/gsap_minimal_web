@@ -10,6 +10,7 @@ export default function Text() {
         const paragraphSplit = new SplitText('.subtitle', { type: 'lines'});
 
         gsap.from(textSplit.chars, {
+            opacity: 0,
             yPercent: 100,
             duration: 1.8,
             ease: 'expo.out',
