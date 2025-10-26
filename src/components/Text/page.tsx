@@ -10,18 +10,27 @@ export default function Text() {
         const paragraphSplit = new SplitText('.subtitle', { type: 'lines'});
 
         gsap.from(textSplit.chars, {
-            xPercent: 500,
+            yPercent: 100,
             duration: 1.8,
             ease: 'expo.out',
             stagger: 0.06
-        })
+        });
+
+        gsap.from(paragraphSplit.lines, {
+            opacity: 0,
+            yPercent: 100,
+            duration: 1.8,
+            ease: 'expo.out',
+            stagger: 0.06,
+            delay: 1,
+        });
     }, []);
   return (
     <main className="">
       <section className="relative">
         <div>
           <p
-            className="absolute -top-55 left-55 text-[14px] z-25"
+            className="title absolute -top-55 left-55 text-[14px] z-25"
 
           >
             REMA X KXSI
@@ -30,7 +39,7 @@ export default function Text() {
 
         <div>
           <p
-            className="title absolute -top-45 left-90 z-20 text-[14px] font-bold leading leading-4"
+            className="subtitle absolute -top-45 left-90 z-20 text-[14px] font-bold leading leading-4"
 
           >
             SCROLL TO <br /> LOOK THROUGH <br /> THE IMAGES
@@ -39,7 +48,7 @@ export default function Text() {
 
         <div>
           <p
-            className="font-orbitron absolute right-100 -top-80 transform -rotate-90"
+            className="subtitle font-orbitron absolute right-100 -top-80 transform -rotate-90"
 
           >
             10 -21
@@ -47,7 +56,7 @@ export default function Text() {
         </div>
 
         <div className="absolute top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 z-5">
-          <p id="kxsi" className="text-[500px] transform -rotate-8 font-bold" >
+          <p id="kxsi" className="subtitle text-[500px] transform -rotate-8 font-bold" >
             KXSI
           </p>
         </div>
