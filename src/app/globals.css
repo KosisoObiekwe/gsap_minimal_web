@@ -2,7 +2,7 @@
 
 body {
   font-family: var(--font-helvetica), sans-serif;
-  background-color: #E9E9E9;
+  background-color: #00000010;
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -11,3 +11,10 @@ body {
 .font-orbitron {
   font-family: var(--font-orbitron), sans-serif;
 }
+
+/*.nav {*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    z-index: 100;*/
+/*}*/
